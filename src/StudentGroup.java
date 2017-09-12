@@ -202,7 +202,7 @@ public class StudentGroup implements StudentArrayOperation {
 		for(int i=0;i<this.students.length-1;i++)
 		{
 			Date d=students[i].getBirthDate();
-			if(d.compareTo(date)<0)
+			if(d.compareTo(date)<=0)
 				{
 				s[j]=students[i];
 				j++;
@@ -222,7 +222,7 @@ public class StudentGroup implements StudentArrayOperation {
 		for(int i=0;i<this.students.length-1;i++)
 		{
 			Date d=students[i].getBirthDate();
-			if((d.compareTo(lastDate)<0)&&(d.compareTo(firstDate)>0))
+			if((d.compareTo(lastDate)<=0)&&(d.compareTo(firstDate)>=0))
 				{
 				s[j]=students[i];
 				j++;
