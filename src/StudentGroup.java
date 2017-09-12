@@ -34,7 +34,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void setStudents(Student[] students) {
 		// Add your implementation here
 		if(students==null)
-			throw new IllegalArgumentException;
+			throw new IllegalArgumentException();
 		else
 			this.students=students;
 	}
